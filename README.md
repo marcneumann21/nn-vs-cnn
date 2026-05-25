@@ -79,37 +79,7 @@ You can test your own handwritten digit images.
 
 Place images here:
 
-custom/data/
-
----
-
-## Naming Convention
-
-Each image must follow this format:
-
-{number}.png
-
-Examples:
-
-0.png
-3.png
-7.png
-
-The filename represents the expected digit label.
-
----
-
-# 📁 Project Structure
-
-NN_vs_CNN/
-
-├── nn/
-├── cnn/
-├── models/
-├── custom/
-│   └── data/
-├── requirements.txt
-└── README.md
+custom/data/{number}.png
 
 ---
 
@@ -124,22 +94,3 @@ NN_vs_CNN/
 - GPU support (MPS / CUDA if available)
 
 ---
-
-# 💾 Model Behavior
-
-- If a saved model exists → it will be loaded automatically
-- If not → a new model is created and trained from scratch
-- Models are saved after training
-
----
-
-# ⚡ Important Notes
-
-- Always use Python 3.11
-- Always run inside the virtual environment
-- Do NOT run files directly (no python nn/main.py)
-
-Use instead:
-
-python -m nn.main
-python -m cnn.main
