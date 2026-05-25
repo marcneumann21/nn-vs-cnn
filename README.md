@@ -1,17 +1,145 @@
-# MNIST Neural Network (NumPy)
+# MNIST Neural Network (NumPy vs PyTorch)
 
-This project implements a simple fully-connected neural network from scratch using NumPy to classify handwritten digits from the MNIST dataset.
+This project implements handwritten digit classification on the MNIST dataset using:
 
-## Features
-- Load MNIST dataset via tensorflow
-- Manual implementation of forward and backward propagation
-- Fully connected neural network with 2 hidden layers
-- Model training using gradient descent
-- Save and load model weights (`.npz`)
-- Test single predictions and compute accuracy
+- A fully-connected Neural Network (NN) implemented from scratch using NumPy
+- A Convolutional Neural Network (CNN) implemented using PyTorch
 
-## Model Architecture
-- Input: 784 (28×28 images flattened)
-- Hidden layer 1: 64 neurons
-- Hidden layer 2: 32 neurons
-- Output layer: 10 neurons (digits 0–9)
+The project supports training, evaluation, saving/loading models, and testing on custom images.
+
+---
+
+# ⚠️ Requirements
+
+This project **must use Python 3.11**.
+
+Using newer Python versions (e.g. 3.12+) may cause compatibility issues with ML libraries such as PyTorch, NumPy, or TensorFlow.
+
+---
+
+# 🛠 Setup
+
+## 1. Install Python 3.11
+
+On macOS (Homebrew):
+
+```bash
+brew install python@3.11
+```
+
+---
+
+## 2. Create Virtual Environment
+
+From the project root:
+
+```bash
+python3.11 -m venv .venv
+```
+
+---
+
+## 3. Activate Virtual Environment
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 🚀 Run the Project
+
+You can run either implementation:
+
+## ▶ Neural Network (NumPy / NN)
+
+```bash
+python -m nn.main
+```
+
+## ▶ Convolutional Neural Network (CNN)
+
+```bash
+python -m cnn.main
+```
+
+---
+
+# 🖼 Custom Data
+
+You can test your own handwritten digit images.
+
+Place images here:
+
+custom/data/
+
+---
+
+## Naming Convention
+
+Each image must follow this format:
+
+{number}.png
+
+Examples:
+
+0.png
+3.png
+7.png
+
+The filename represents the expected digit label.
+
+---
+
+# 📁 Project Structure
+
+NN_vs_CNN/
+
+├── nn/
+├── cnn/
+├── models/
+├── custom/
+│   └── data/
+├── requirements.txt
+└── README.md
+
+---
+
+# ✨ Features
+
+- MNIST digit classification (0–9)
+- Fully-connected NN from scratch (NumPy)
+- CNN using PyTorch
+- Training loop with accuracy tracking
+- Model saving & loading
+- Custom image inference
+- GPU support (MPS / CUDA if available)
+
+---
+
+# 💾 Model Behavior
+
+- If a saved model exists → it will be loaded automatically
+- If not → a new model is created and trained from scratch
+- Models are saved after training
+
+---
+
+# ⚡ Important Notes
+
+- Always use Python 3.11
+- Always run inside the virtual environment
+- Do NOT run files directly (no python nn/main.py)
+
+Use instead:
+
+python -m nn.main
+python -m cnn.main
