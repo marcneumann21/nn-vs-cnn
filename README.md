@@ -1,9 +1,10 @@
-# MNIST Neural Network (NumPy vs PyTorch)
+# Neural Network (NumPy) vs Convolutional Neural Network (PyTorch)
 
 This project implements handwritten digit classification on the MNIST dataset using:
 
-- A fully-connected Neural Network (NN) implemented from scratch using NumPy
-- A Convolutional Neural Network (CNN) implemented using PyTorch
+- A fully-connected Neural Network implemented from scratch using NumPy
+- A Convolutional Neural Network implemented using PyTorch
+- MNIST dataset
 
 The project supports training, evaluation, saving/loading models, and testing on custom images.
 
@@ -27,6 +28,11 @@ On macOS (Homebrew):
 brew install python@3.11
 ```
 
+On Linux (apt):
+
+```bash
+sudo apt install python@3.11
+```
 ---
 
 ## 2. Create Virtual Environment
@@ -59,16 +65,20 @@ pip install -r requirements.txt
 
 You can run either implementation:
 
-## ▶ Neural Network (NumPy / NN)
+## ▶ NN
+
+Run in the nn folder:
 
 ```bash
-python -m nn.main
+python3 main.py
 ```
 
-## ▶ Convolutional Neural Network (CNN)
+## ▶ CNN
+
+run in the cnn folder:
 
 ```bash
-python -m cnn.main
+python3 main.py
 ```
 
 ---
@@ -92,5 +102,3 @@ custom/data/{number}.png
 - Model saving & loading
 - Custom image inference
 - GPU support (MPS / CUDA if available)
-
----
