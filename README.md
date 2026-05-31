@@ -67,7 +67,7 @@ You can run either implementation:
 
 ## ▶ NN
 
-Run in the nn folder:
+Run in the nn/ folder:
 
 ```bash
 python3 main.py
@@ -75,7 +75,7 @@ python3 main.py
 
 ## ▶ CNN
 
-run in the cnn folder:
+run in the cnn/ folder:
 
 ```bash
 python3 main.py
@@ -89,7 +89,7 @@ You can test your own handwritten digit images.
 
 Place images here:
 
-custom/data/{number}.png
+custom_data/{number}.png
 
 ---
 
