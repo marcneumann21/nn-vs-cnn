@@ -85,7 +85,7 @@ python3 main.py
 
 # 🖼 Custom Data
 
-You can test your own handwritten digit images.
+You can test your own handwritten digit images (only 0-9).
 
 Place images here:
 
