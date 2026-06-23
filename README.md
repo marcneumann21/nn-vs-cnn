@@ -22,13 +22,13 @@ Using newer Python versions (e.g. 3.12+) may cause compatibility issues with ML 
 
 ## 1. Install Python 3.11
 
-On macOS (Homebrew):
+On macOS:
 
 ```bash
 brew install python@3.11
 ```
 
-On Linux (apt):
+On Linux:
 
 ```bash
 sudo apt install python@3.11
@@ -86,7 +86,7 @@ cd cnn/
 
 Run the `main.py` file:
 ```bash
-python3 main.py
+python3.11 main.py
 ```
 
 ---
