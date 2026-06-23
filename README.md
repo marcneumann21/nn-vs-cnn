@@ -67,15 +67,22 @@ You can run either implementation:
 
 ## ▶ NN
 
-Run in the /nn folder:
+Navigate to the nn directory:
+```bash
+cd nn/
+```
 
+run the `main.py` file:
 ```bash
 python3 main.py
 ```
 
 ## ▶ CNN
 
-run in the /cnn folder:
+Navigate to the cnn directory:
+```bash
+cd cnn/
+```
 
 ```bash
 python3 main.py
