@@ -10,7 +10,7 @@ The project supports training, evaluation, saving/loading models, and testing on
 
 ---
 
-# ⚠️ Requirements
+# Requirements
 
 This project **must use Python 3.11**.
 
@@ -18,7 +18,7 @@ Using newer Python versions (e.g. 3.12+) may cause compatibility issues with ML 
 
 ---
 
-# 🛠 Setup
+# Setup
 
 ## 1. Install Python 3.11
 
@@ -61,36 +61,37 @@ pip install -r requirements.txt
 
 ---
 
-# 🚀 Run the Project
+# Run the Project
 
 You can run either implementation:
 
-## ▶ NN
+## NN
 
 Navigate to the nn directory:
 ```bash
 cd nn/
 ```
 
-run the `main.py` file:
+Run the `main.py` file:
 ```bash
-python3 main.py
+python3.11 main.py
 ```
 
-## ▶ CNN
+## CNN
 
 Navigate to the cnn directory:
 ```bash
 cd cnn/
 ```
 
+Run the `main.py` file:
 ```bash
 python3 main.py
 ```
 
 ---
 
-# 🖼 Custom Data
+# Custom Data
 
 You can test your own handwritten digit images (only 0-9).
 
@@ -100,7 +101,7 @@ custom_data/{number}.png
 
 ---
 
-# ✨ Features
+# Features
 
 - MNIST digit classification (0–9)
 - Fully-connected NN from scratch (NumPy)
